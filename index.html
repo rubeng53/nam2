@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ñam Ñam All You Can Eat</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/5212345678901" class="wa" target="_blank" title="Contáctanos por WhatsApp">💬</a>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-logo">Ñam<span>Ñam</span> 🍽️</div>
+  <div class="nav-links">
+    <a href="#menu">Menú</a>
+    <a href="#precio">Precio</a>
+    <a href="#sucursales">Sucursales</a>
+    <a href="#opiniones">Opiniones</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-glow g1"></div>
+  <div class="hero-glow g2"></div>
+  <div class="floaters" id="floaters"></div>
+  <div class="hero-pill">🔥 All You Can Eat — Más de 60 platillos</div>
+  <h1>Come <em>TODO</em><br>lo que quieras</h1>
+  <p class="hero-sub">$269 MXN por persona &bull; Sin límite &bull; 3 sucursales en CDMX y Puebla</p>
+  <div class="hero-actions">
+    <a href="#menu" class="btn-r">Ver menú completo</a>
+    <a href="#sucursales" class="btn-o">¿Dónde estamos?</a>
+  </div>
+</header>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stat rv">
+    <span class="stat-n" data-target="60" data-suffix="+">0</span>
+    <span class="stat-l">Platillos</span>
+  </div>
+  <div class="stat rv d1">
+    <span class="stat-n" data-target="269" data-prefix="$" data-suffix=" MXN">0</span>
+    <span class="stat-l">Precio único</span>
+  </div>
+  <div class="stat rv d2">
+    <span class="stat-n" data-target="4.9" data-suffix="★" data-dec="1">0</span>
+    <span class="stat-l">Calificación</span>
+  </div>
+  <div class="stat rv d3">
+    <span class="stat-n" data-target="3" data-suffix=" sucursales">0</span>
+    <span class="stat-l">Ubicaciones</span>
+  </div>
+</div>
+
+<!-- MENÚ -->
+<section id="menu">
+  <div class="s-head rv">
+    <span class="s-tag">Lo que comes</span>
+    <h2 class="s-title">Nuestro Menú</h2>
+    <p class="s-sub">Más de 60 platillos preparados al momento — sin límite</p>
+  </div>
+
+  <div class="tab-bar rv">
+    <button class="tab active" onclick="showTab('mexicana', this)">🇲🇽 Mexicana</button>
+    <button class="tab" onclick="showTab('italiana', this)">🍝 Italiana</button>
+    <button class="tab" onclick="showTab('burgers', this)">🍔 Burgers &amp; Dogs</button>
+    <button class="tab" onclick="showTab('alitas', this)">🍗 Alitas &amp; Pizza</button>
+    <button class="tab" onclick="showTab('japonesa', this)">🍱 Japonesa</button>
+    <button class="tab" onclick="showTab('sushi', this)">🍣 Sushi</button>
+  </div>
+
+  <!-- MEXICANA -->
+  <div class="menu-panel active" id="tab-mexicana">
+    <div class="dish rv"><span class="dish-emoji">🍲</span><span class="dish-name">Consomé de pollo</span><span class="dish-desc">Con arroz, pechuga de pollo y verduras cocidas (250 ml)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🍜</span><span class="dish-name">Sopa de pasta del día</span><span class="dish-desc">Varía según el día (250 ml)</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🌮</span><span class="dish-name">Sopa de tortilla</span><span class="dish-desc">Nuestra receta original con aguacate y queso (250 ml)</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🫕</span><span class="dish-name">Caldo tlalpeño</span><span class="dish-desc">Pechuga de pollo, arroz, verduras y chipotle (250 ml)</span></div>
+    <div class="dish rv"><span class="dish-emoji">🫓</span><span class="dish-name">Molletes naturales</span><span class="dish-desc">Con frijoles y queso, acompañados de salsa pico de gallo (2 pzas)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🫔</span><span class="dish-name">Chilaquiles</span><span class="dish-desc">Verdes, rojos, divorciados o con mole. Con crema, queso y frijoles refritos (200 grs)</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🌯</span><span class="dish-name">Enchiladas</span><span class="dish-desc">3 piezas: verdes, rojas o con mole. Con pollo 60g, queso, crema y frijoles refritos</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🥗</span><span class="dish-name">Ensalada Ñam Ñam</span><span class="dish-desc">Lechuga, espinaca, mango, manzana, zanahoria y arándano. Con vinagreta o mango (200 grs)</span></div>
+    <div class="dish rv"><span class="dish-emoji">🥙</span><span class="dish-name">Ensalada César</span><span class="dish-desc">Con aderezo de la casa, crotones y queso parmesano (200 grs)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🥗</span><span class="dish-name">Ensalada Otoñal</span><span class="dish-desc">Lechuga, zanahoria, mix de col, jitomate. Con vinagreta o mango (200 grs)</span></div>
+  </div>
+
+  <!-- ITALIANA -->
+  <div class="menu-panel" id="tab-italiana">
+    <div class="dish rv"><span class="dish-emoji">🍝</span><span class="dish-name">Bolognesa</span><span class="dish-desc">Fettuccini con carne de res, salsa bolognesa y queso parmesano (180 grs)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🍝</span><span class="dish-name">Fettuccini Alfredo</span><span class="dish-desc">Salsa Alfredo y queso parmesano (150 grs)</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🍝</span><span class="dish-name">Al burro</span><span class="dish-desc">Spaguetti a la mantequilla y queso parmesano (150 grs)</span></div>
+  </div>
+
+  <!-- BURGERS & DOGS -->
+  <div class="menu-panel" id="tab-burgers">
+    <div class="dish rv"><span class="dish-badge">PAN BRIOCHE</span><span class="dish-emoji">🍔</span><span class="dish-name">Ñam Ñam Bacon</span><span class="dish-desc">Carne 100% res, jitomate, lechuga, aros de cebolla, tocino y salsa BBQ (310 grs)</span></div>
+    <div class="dish rv d1"><span class="dish-badge">PAN BRIOCHE</span><span class="dish-emoji">🍔</span><span class="dish-name">Hawaian Hot</span><span class="dish-desc">Carne, jitomate, lechuga, aros de cebolla, piña asada y salsa piña hot (310 grs)</span></div>
+    <div class="dish rv d2"><span class="dish-badge">PAN BRIOCHE</span><span class="dish-emoji">🍔</span><span class="dish-name">Italiana</span><span class="dish-desc">Carne, pepperoni, jitomate, lechuga, mozzarella gratinado y salsa pomodoro (310 grs)</span></div>
+    <div class="dish rv d3"><span class="dish-badge">PAN BRIOCHE</span><span class="dish-emoji">🍔</span><span class="dish-name">Buffalo Tenders</span><span class="dish-desc">Tenders de pollo con buffalo, jitomate, cebolla, lechuga y blue cheese (310 grs)</span></div>
+    <div class="dish rv"><span class="dish-emoji">🌭</span><span class="dish-name">Jocho Ñam Ñam</span><span class="dish-desc">Salchicha de res, cebolla, jitomate y jalapeños (120 grs)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🌭</span><span class="dish-name">Jocho Bacon Cheese</span><span class="dish-desc">Salchicha de res, mix de quesos y tocino finamente picado (120 grs)</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🌭</span><span class="dish-name">Nacho Dog</span><span class="dish-desc">Salchicha de res con Doritos Nachos, queso cheddar y rajas picadas (120 grs)</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🌶️</span><span class="dish-name">Jocho Fuego</span><span class="dish-desc">Salchicha de res con Takis Fuego y queso cheddar (120 grs)</span></div>
+  </div>
+
+  <!-- ALITAS & PIZZA -->
+  <div class="menu-panel" id="tab-alitas">
+    <div class="dish rv"><span class="dish-emoji">🍗</span><span class="dish-name">Alitas Cajún</span><span class="dish-desc">Con salsa cajún y aderezo ranch (110 grs)</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🍗</span><span class="dish-name">Boneless</span><span class="dish-desc">Elige tu salsa: Buffalo, BBQ, Mango Habanero, Lemon Pepper, Ajo Parmesano, Cajún o Naranja Chipotle (110 grs)</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🍕</span><span class="dish-name">Pizza Margarita</span><span class="dish-desc">Salsa pomodoro, mozzarella y albahaca. Cambia sabor por $35: Pepperoni, Diavola, Hawaiana o Mexicana (255 grs)</span></div>
+  </div>
+
+  <!-- JAPONESA -->
+  <div class="menu-panel" id="tab-japonesa">
+    <div class="dish rv"><span class="dish-emoji">🫘</span><span class="dish-name">Edamame al vapor</span><span class="dish-desc">Clásico edamame japonés</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🫘</span><span class="dish-name">Edamame asado</span><span class="dish-desc">Con chile en polvo y aderezo especial</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🥦</span><span class="dish-name">Tempura de verduras</span><span class="dish-desc">Plátano macho, cebolla, calabaza, brócoli y zanahoria</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🍙</span><span class="dish-name">Ñam Ñam bola</span><span class="dish-desc">Bola de arroz rellena con aguacate, salmón, camarón y salsa Tampico. Con salsas chipotle y kushiage</span></div>
+    <div class="dish rv"><span class="dish-emoji">🍢</span><span class="dish-name">Kushiage de queso</span><span class="dish-desc">Brocheta empanizada de queso</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🍢</span><span class="dish-name">Kushiage plátano</span><span class="dish-desc">Brocheta empanizada de plátano con queso</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🍜</span><span class="dish-name">Misoshiru</span><span class="dish-desc">Fondo miso, tofu, shiitake y cebollín</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🍜</span><span class="dish-name">Ramen</span><span class="dish-desc">Fondo y pasta ramen, shiitake, huevo y naruto. Con pollo, camarón o filete de res y cebollín</span></div>
+    <div class="dish rv"><span class="dish-emoji">🍚</span><span class="dish-name">Gohan Teriyaki de pollo</span><span class="dish-desc">Arroz Gohan con tiras de pechuga asadas y marinadas con salsa teriyaki y ajonjolí</span></div>
+    <div class="dish rv d1"><span class="dish-emoji">🍚</span><span class="dish-name">Gohan especial</span><span class="dish-desc">Arroz Gohan con tiras de cangrejo, queso crema, aguacate y salsa Tampico. Con salsa dulce</span></div>
+    <div class="dish rv d2"><span class="dish-emoji">🍚</span><span class="dish-name">Gohan spicy</span><span class="dish-desc">Arroz Gohan con atún o salmón spicy, aguacate y ajonjolí</span></div>
+    <div class="dish rv d3"><span class="dish-emoji">🥘</span><span class="dish-name">Yakimeshi</span><span class="dish-desc">Bowl de arroz frito con calabaza, zanahoria, pimiento, cebolla y huevo. Elige: verduras, pollo, camarón, filete, especial karage o mixto</span></div>
+  </div>
+
+  <!-- SUSHI -->
+  <div class="menu-panel" id="tab-sushi">
+    <div class="sushi-group">
+      <p class="sushi-cat">🍱 Maki (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">California</span><span class="dish-desc">Cangrejo, pepino, aguacate y ajonjolí</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">California especial</span><span class="dish-desc">Cangrejo, pepino, aguacate y masago</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Filadelfia</span><span class="dish-desc">Salmón fresco, aguacate, queso crema y ajonjolí</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Filadelfia especial</span><span class="dish-desc">Salmón fresco, aguacate, queso crema y masago</span></div>
+      </div>
+      <p class="sushi-cat">🌶️ Rollos con salsa chipotle (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Monkey roll</span><span class="dish-desc">Camarón capeado, queso crema, aguacate y plátano frito. Con salsa chipotle</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Rikishi roll</span><span class="dish-desc">Camarón empanizado, queso crema y pepino; mango, aguacate y nuez caramelizada por fuera. Con salsas dulce y chipotle</span></div>
+      </div>
+      <p class="sushi-cat">🌊 Rollos con salsa Tampico (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Tampico roll</span><span class="dish-desc">Cangrejo, queso crema, aguacate, chiles toreados y kakiage. Con salsa Tampico</span></div>
+      </div>
+      <p class="sushi-cat">🔥 Empanizados (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Ñam Ñam roll</span><span class="dish-desc">Queso crema, camarón empanizado y aguacate. Con salsa Tampico y ajonjolí</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Ebi roll</span><span class="dish-desc">Camarón empanizado, queso crema y pepino. Con salsa chipotle</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Luna roll</span><span class="dish-desc">Cangrejo empanizado, queso crema y aguacate. Con salsas chipotle y shirasha</span></div>
+      </div>
+      <p class="sushi-cat">🥑 Ingredientes por fuera (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Avocado roll</span><span class="dish-desc">Camarón empanizado, queso crema y salsa Tampico; aguacate por fuera. Con salsa kushiage y ajonjolí</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Shake roll</span><span class="dish-desc">Aguacate, pepino y queso crema; salmón fresco por fuera. Con salsas Tampico y chipotle</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Salmón o Atún spicy</span><span class="dish-desc">Aguacate y queso crema por fuera, salmón o atún spicy y cebollín</span></div>
+      </div>
+      <p class="sushi-cat">🍑 Con fruta (10 piezas)</p>
+      <div class="sushi-grid">
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Kekoto roll</span><span class="dish-desc">Salmón fresco, pepino, aguacate, queso crema y mango. Con salsa de tamarindo</span></div>
+        <div class="dish"><span class="dish-emoji">🍣</span><span class="dish-name">Tiki thai roll</span><span class="dish-desc">Queso crema, aguacate y pepino; mango por fuera. Con piña tempurizada y salsa especial</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRECIO -->
+<section id="precio" class="price-sec">
+  <div class="s-head rv">
+    <span class="s-tag">Sin letra chica</span>
+    <h2 class="s-title">Un solo precio. Todo incluido.</h2>
+    <p class="s-sub">Sin trampa, sin cobros ocultos, sin límite de rondas</p>
+  </div>
+  <div class="price-card rv">
+    <div class="price-big"><sup>$</sup><span id="pd">0</span></div>
+    <div class="price-unit">MXN por persona</div>
+    <div class="perks">
+      <div class="perk"><div class="dot"></div>Más de 60 platillos</div>
+      <div class="perk"><div class="dot"></div>Sin límite de rondas</div>
+      <div class="perk"><div class="dot"></div>Precios incluyen IVA</div>
+    </div>
+    <div class="note-box">Mínimo una bebida con costo por persona. Bebidas y adicionales se venden por separado. El menú es válido solo para consumo en restaurante. No aplica para llevar ni servicio a domicilio. Aplican restricciones.</div>
+    <a href="https://wa.me/5212345678901" class="btn-r" style="margin-top:1.75rem;display:inline-block">Reservar por WhatsApp 💬</a>
+  </div>
+</section>
+
+<!-- SUCURSALES -->
+<section id="sucursales" class="alt">
+  <div class="s-head rv">
+    <span class="s-tag">Encuéntranos</span>
+    <h2 class="s-title">Nuestras sucursales</h2>
+    <p class="s-sub">3 ubicaciones en CDMX y Puebla</p>
+  </div>
+  <div class="branches-grid">
+    <div class="branch rv">
+      <span class="branch-icon">📍</span>
+      <div class="branch-name">Parque Las Antenas</div>
+      <div class="branch-loc">Iztapalapa, CDMX</div>
+      <div class="hours">Dom–Jue: 1:00 pm – 10:00 pm<br>Vie–Sáb: 1:00 pm – 11:00 pm</div>
+    </div>
+    <div class="branch rv d1">
+      <span class="branch-icon">📍</span>
+      <div class="branch-name">Plaza Vía 515</div>
+      <div class="branch-loc">Iztacalco, CDMX</div>
+      <div class="hours">Dom–Jue: 1:00 pm – 10:00 pm<br>Vie–Sáb: 1:00 pm – 11:00 pm</div>
+    </div>
+    <div class="branch rv d2">
+      <span class="branch-icon">🆕</span>
+      <span class="branch-new">¡Nueva sucursal!</span>
+      <div class="branch-name">Parque Puebla</div>
+      <div class="branch-loc">Puebla, Pue.</div>
+      <div class="hours">Dom–Jue: 1:00 pm – 10:00 pm<br>Vie–Sáb: 1:00 pm – 11:00 pm</div>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIONES -->
+<section id="opiniones">
+  <div class="s-head rv">
+    <span class="s-tag">Lo que dicen</span>
+    <h2 class="s-title">Opiniones reales</h2>
+    <p class="s-sub">Miles de clientes satisfechos en CDMX y Puebla</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review rv">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"El sushi estaba increíble. Fuimos en familia y todos quedamos más que satisfechos. ¡Definitivamente regresamos!"</p>
+      <p class="review-auth">— Karla M. · Google Reviews</p>
+    </div>
+    <div class="review rv d1">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Vale cada peso. La variedad de platillos es enorme y todos están bien preparados. El lugar muy limpio."</p>
+      <p class="review-auth">— Ricardo G. · Google Reviews</p>
+    </div>
+    <div class="review rv d2">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Los boneless de mango habanero son adictivos. El ramen también estaba excelente. Ya quiero volver."</p>
+      <p class="review-auth">— Sofía L. · Google Reviews</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <strong>Ñam Ñam All You Can Eat</strong> &bull; Parque Las Antenas &bull; Plaza Vía 515 &bull; Parque Puebla</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
