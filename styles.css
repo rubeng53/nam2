@@ -46,15 +46,15 @@ nav {
 }
 
 .nav-logo-img {
-  height: 44px;
+  height: 46px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  transition: filter 0.2s;
+  mix-blend-mode: lighten;
+  transition: opacity 0.2s;
 }
 
 .nav-logo-img:hover {
-  filter: brightness(0) saturate(100%) invert(18%) sepia(99%) saturate(2500%) hue-rotate(345deg) brightness(95%);
+  opacity: 0.85;
 }
 
 .nav-links {
